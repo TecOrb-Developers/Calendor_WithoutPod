@@ -16,6 +16,13 @@
 		180CB5A0294C5648009EF0AA /* CalendorWithoutPodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180CB59F294C5648009EF0AA /* CalendorWithoutPodTests.swift */; };
 		180CB5AA294C5648009EF0AA /* CalendorWithoutPodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180CB5A9294C5648009EF0AA /* CalendorWithoutPodUITests.swift */; };
 		180CB5AC294C5648009EF0AA /* CalendorWithoutPodUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180CB5AB294C5648009EF0AA /* CalendorWithoutPodUITestsLaunchTests.swift */; };
+		180CB5BA294C5726009EF0AA /* DayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180CB5B9294C5726009EF0AA /* DayModel.swift */; };
+		180CB5BC294C574A009EF0AA /* CalendorStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180CB5BB294C574A009EF0AA /* CalendorStyle.swift */; };
+		180CB5BE294C5764009EF0AA /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180CB5BD294C5764009EF0AA /* CalendarView.swift */; };
+		180CB5C0294C5786009EF0AA /* CalenderHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180CB5BF294C5786009EF0AA /* CalenderHeaderCell.swift */; };
+		180CB5C2294C57A5009EF0AA /* CalenderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180CB5C1294C57A5009EF0AA /* CalenderCell.swift */; };
+		180CB5C4294C57C4009EF0AA /* Date+Exts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180CB5C3294C57C4009EF0AA /* Date+Exts.swift */; };
+		180CB5C6294C5B2F009EF0AA /* CalendorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180CB5C5294C5B2F009EF0AA /* CalendorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		180CB5A5294C5648009EF0AA /* CalendorWithoutPodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalendorWithoutPodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		180CB5A9294C5648009EF0AA /* CalendorWithoutPodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendorWithoutPodUITests.swift; sourceTree = "<group>"; };
 		180CB5AB294C5648009EF0AA /* CalendorWithoutPodUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendorWithoutPodUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		180CB5B9294C5726009EF0AA /* DayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayModel.swift; sourceTree = "<group>"; };
+		180CB5BB294C574A009EF0AA /* CalendorStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendorStyle.swift; sourceTree = "<group>"; };
+		180CB5BD294C5764009EF0AA /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		180CB5BF294C5786009EF0AA /* CalenderHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderHeaderCell.swift; sourceTree = "<group>"; };
+		180CB5C1294C57A5009EF0AA /* CalenderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderCell.swift; sourceTree = "<group>"; };
+		180CB5C3294C57C4009EF0AA /* Date+Exts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Exts.swift"; sourceTree = "<group>"; };
+		180CB5C5294C5B2F009EF0AA /* CalendorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +113,11 @@
 		180CB587294C5644009EF0AA /* CalendorWithoutPod */ = {
 			isa = PBXGroup;
 			children = (
+				180CB5B8294C56FF009EF0AA /* CalendorView */,
 				180CB588294C5644009EF0AA /* AppDelegate.swift */,
 				180CB58A294C5644009EF0AA /* SceneDelegate.swift */,
 				180CB58C294C5644009EF0AA /* ViewController.swift */,
+				180CB5C5294C5B2F009EF0AA /* CalendorViewController.swift */,
 				180CB58E294C5644009EF0AA /* Main.storyboard */,
 				180CB591294C5647009EF0AA /* Assets.xcassets */,
 				180CB593294C5647009EF0AA /* LaunchScreen.storyboard */,
@@ -125,6 +141,19 @@
 				180CB5AB294C5648009EF0AA /* CalendorWithoutPodUITestsLaunchTests.swift */,
 			);
 			path = CalendorWithoutPodUITests;
+			sourceTree = "<group>";
+		};
+		180CB5B8294C56FF009EF0AA /* CalendorView */ = {
+			isa = PBXGroup;
+			children = (
+				180CB5B9294C5726009EF0AA /* DayModel.swift */,
+				180CB5BB294C574A009EF0AA /* CalendorStyle.swift */,
+				180CB5BD294C5764009EF0AA /* CalendarView.swift */,
+				180CB5BF294C5786009EF0AA /* CalenderHeaderCell.swift */,
+				180CB5C1294C57A5009EF0AA /* CalenderCell.swift */,
+				180CB5C3294C57C4009EF0AA /* Date+Exts.swift */,
+			);
+			path = CalendorView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +287,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				180CB5BA294C5726009EF0AA /* DayModel.swift in Sources */,
+				180CB5C0294C5786009EF0AA /* CalenderHeaderCell.swift in Sources */,
+				180CB5C6294C5B2F009EF0AA /* CalendorViewController.swift in Sources */,
 				180CB58D294C5644009EF0AA /* ViewController.swift in Sources */,
+				180CB5C2294C57A5009EF0AA /* CalenderCell.swift in Sources */,
+				180CB5BE294C5764009EF0AA /* CalendarView.swift in Sources */,
 				180CB589294C5644009EF0AA /* AppDelegate.swift in Sources */,
 				180CB58B294C5644009EF0AA /* SceneDelegate.swift in Sources */,
+				180CB5C4294C57C4009EF0AA /* Date+Exts.swift in Sources */,
+				180CB5BC294C574A009EF0AA /* CalendorStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
