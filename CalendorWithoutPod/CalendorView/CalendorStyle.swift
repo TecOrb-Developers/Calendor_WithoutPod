@@ -15,7 +15,8 @@ struct CalenderStyle {
     
     struct ActiveDate {
         var textColor: UIColor = .systemBackground
-        var backgroundColor: UIColor = .systemBlue
+       // var backgroundColor: UIColor = .systemBlue
+        var backgroundColor: UIColor = .black
     }
     
     struct InActiveDate {
