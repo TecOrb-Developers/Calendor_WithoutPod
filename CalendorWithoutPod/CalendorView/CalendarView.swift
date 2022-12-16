@@ -100,7 +100,7 @@ class CalendarView: UIView {
     private func setupLabel() {
         monthLabel = UILabel()
         monthLabel.font = UIFont.systemFont(ofSize: 16, weight: .bold)
-        monthLabel.textColor = UIColor.white
+        monthLabel.textColor = UIColor.black
         monthLabel.translatesAutoresizingMaskIntoConstraints = true
         addSubview(monthLabel)
         
@@ -125,14 +125,13 @@ class CalendarView: UIView {
         stack.alignment = .center
         stack.spacing = 5
         stack.axis = .horizontal
-        stack.backgroundColor = .red
+       // stack.backgroundColor = .red
         stack.layer.cornerRadius = 8
         stack.layoutMargins = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 0)
         stack.isLayoutMarginsRelativeArrangement = true
         addSubview(stack)
-        
-        minusButton.tintColor = .white
-        addButton.tintColor = .white
+        minusButton.tintColor = .black
+        addButton.tintColor = .black
         NSLayoutConstraint.activate([
             minusButton.widthAnchor.constraint(equalToConstant: 50),
             minusButton.heightAnchor.constraint(equalToConstant: 50),
@@ -159,8 +158,8 @@ class CalendarView: UIView {
         layout.minimumLineSpacing = 0
         layout.minimumInteritemSpacing = 0
         
-        collectionView = UICollectionView(frame: .init(x: 306, y: 310, width: UIScreen.main.bounds.width, height: 50), collectionViewLayout: layout)
-        collectionView.backgroundColor = .systemBackground
+        collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+       // collectionView.backgroundColor = .blue
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.delegate = self
         collectionView.dataSource = self

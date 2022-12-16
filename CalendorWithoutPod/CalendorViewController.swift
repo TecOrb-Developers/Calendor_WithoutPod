@@ -18,9 +18,10 @@ class CalendorViewController: UIViewController {
         super.viewDidLoad()
         
         calenderView = CalendarView()
+       // calenderView.backgroundColor = .black
         calenderView.didSelectDate = { [weak self] selectedDate in
             guard let self = self else { return }
-            self.dateLabel.text = selectedDate?.date.shortDateFormat
+           // self.dateLabel.text = selectedDate?.date.shortDateFormat
         }
         
         setupLabel()
@@ -30,12 +31,13 @@ class CalendorViewController: UIViewController {
     private func setupLabel() {
         selectedDateLabel = UILabel()
         selectedDateLabel.font = .preferredFont(forTextStyle: .headline)
-        selectedDateLabel.text = "Selected Date"
+        //selectedDateLabel.text = "Selected Date"
+      //  selectedDateLabel.font = .systemFont(ofSize: 40)
         selectedDateLabel.textAlignment = .center
         
         dateLabel = UILabel()
         dateLabel.font = .preferredFont(forTextStyle: .title1)
-        dateLabel.text = Date().shortDateFormat
+       // dateLabel.text = Date().shortDateFormat
         dateLabel.textAlignment = .center
     }
     
@@ -50,10 +52,10 @@ class CalendorViewController: UIViewController {
         NSLayoutConstraint.activate([
             mainStack.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             mainStack.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            mainStack.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            //mainStack.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            mainStack.topAnchor.constraint(equalTo: view.topAnchor),
             
-            calenderView.heightAnchor.constraint(equalToConstant: view.bounds.height / 2),
+            calenderView.heightAnchor.constraint(equalToConstant: view.bounds.height/2),
         ])
     }
-    
 }

@@ -20,6 +20,7 @@ class CalenderCell: UICollectionViewCell {
         self.day = day
         self.style = style
         label.text = day.dayNumber
+        print(day.dayNumber)
         label.textColor = !self.day.isNextMonth && !self.day.isPreviousMonth ? style.activeDate.textColor : style.outOfRangeDate
         setupLabelState(isSelected: isSelected)
     }
